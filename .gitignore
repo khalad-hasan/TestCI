@@ -1,0 +1,9 @@
+__pycache__/
+budgetplanner/__pycache__/
+budgetplanner/budget_subpackge/__pycache__/
+budgetplanner/user subpackage/__pycache__/
+
+
+unit_test/__pycache__/
+
+*.pyc
