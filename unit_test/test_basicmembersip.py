@@ -9,17 +9,17 @@ import sys
 class TestBasicMembersip(unittest.TestCase):
     @classmethod
     def setUpClass(cls):        
-        print('setupClass')
+        print('setupClass test_basicmembersip')
         
     def setUp(self) :
-        print('Setup')
+        print('Setup test_basicmembersip')
 
     def tearDown(self):
-        print("tearing down")    
+        print("tearing down test_basicmembersip")    
 
     @classmethod
     def tearDownClass(cls):
-        print("tearDownClass") 
+        print("tearDownClass test_basicmembersip") 
 
     def test_user_expenditure_data(self):  
         basic1=BasicMembership()   

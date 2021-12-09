@@ -7,6 +7,7 @@ import budgetplanner.user_subpackage.service as service
 import budgetplanner.user_subpackage.bank_info as bank_info
 class test_user_bank_info(unittest.TestCase):
     def setUp(self):
+        print("setUp test_user_bankinfo")
         self.password = bank_info.password("001","abc")
         self.password2 = bank_info.password("002","def")
         self.password3 = bank_info.password("003","defg")

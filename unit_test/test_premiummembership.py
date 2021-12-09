@@ -8,17 +8,17 @@ from budgetplanner.budget_subpackage.premiummembership import PremiumMembership
 class TestPremiumMembersip(unittest.TestCase):
     @classmethod
     def setUpClass(cls):        
-        pass
+        print(" setUpClass test_premiummembership")
 
     def setUp(self) :         
-        pass
+        print("setUp test_premiummembership")
 
     def tearDown(self):
-        pass
+        print("tearDown test_premiummembership")
     
     @classmethod
     def tearDownClass(cls):
-        pass
+        print("tearDownClass test_premiummembership")
 
     def test_expenditure_data(self):
         self.premium1=PremiumMembership() 

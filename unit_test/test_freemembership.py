@@ -8,18 +8,18 @@ from budgetplanner.budget_subpackage.freemembership import FreeMemberShip
 class TestFreeMembersip(unittest.TestCase):
     @classmethod
     def setUpClass(cls):        
-        print('setupClass')
+        print('setupClass test_freemembership')
         
     def setUp(self) :
-        print('Setup') 
+        print('Setup test_freemembership') 
     
 
     def tearDown(self):
-        print("tearing down")   
+        print("tearing down test_freemembership")   
 
     @classmethod
     def tearDownClass(cls):
-        print("tearDownClass")
+        print("tearDownClass test_freemembership")
 
     def test_show_budget_chart(self):
         budget=2000
