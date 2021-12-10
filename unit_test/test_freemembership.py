@@ -50,6 +50,9 @@ class TestFreeMembersip(unittest.TestCase):
         budget=2000
         balance=200
         amount=100
+        
+        print("test_add_amount 0")
+        
         free_mem=FreeMemberShip(budget)        
         free_mem.add_amount(amount)
         
