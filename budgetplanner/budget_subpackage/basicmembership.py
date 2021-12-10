@@ -26,7 +26,7 @@ class BasicMembership:
             labels=data.columns
             values=data.iloc[0].values/monthly_allowance      
             figure = px.pie(data,values=values,names=labels,hole=0.3,color_discrete_sequence=px.colors.sequential.RdBu)
-            figure.show()
+            #figure.show()
         except ValueError:
             print("Invalid value entered")
         return [labels,values]
