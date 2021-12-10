@@ -25,7 +25,7 @@ class TestFreeMembersip(unittest.TestCase):
         free_mem=FreeMemberShip(budget)   
         print("test_add_amount 0_1")
         free_mem.add_amount(amount)        
-    
+        print("test_add_amount 0_2")
 
     def tearDown(self):
         print("tearing down TestFreeMembersip")   
@@ -36,12 +36,12 @@ class TestFreeMembersip(unittest.TestCase):
 
     def test_show_budget_chart(self):
         print("test_show_budget_chart Start")
-        budget=2000
-        balance=200
-        amount=100
+        #budget=2000
+        #balance=200
+        #amount=100
 
-        print("test_show_budget_chart 1")
-        free_mem=FreeMemberShip(budget)
+        #print("test_show_budget_chart 1")
+        #free_mem=FreeMemberShip(budget)
         free_mem.set_balance(balance)
 
         print("test_show_budget_chart 2")
@@ -82,11 +82,11 @@ class TestFreeMembersip(unittest.TestCase):
     
     def test_withdraw_amount(self):
         print("test_withdraw_amount Start")
-        budget=2000
-        balance=200
-        amount=100
-        free_mem=FreeMemberShip(budget)
-        free_mem.set_balance(100)  
+        #budget=2000
+        #balance=200
+        #amount=100
+        #free_mem=FreeMemberShip(budget)
+        #free_mem.set_balance(100)  
 
         print("test_withdraw_amount 1")
 
