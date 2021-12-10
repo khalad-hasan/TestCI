@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 from pandas.testing import assert_frame_equal
 from budgetplanner.budget_subpackage.freemembership import FreeMemberShip
+
 #from budgetplanner.budget_subpackage
 
 class TestFreeMembersip(unittest.TestCase):
@@ -48,7 +49,9 @@ class TestFreeMembersip(unittest.TestCase):
     def test_add_amount(self):
         print("test_add_amount Start")
         budget=2000
+        print("test_add_amount Start 1")
         balance=200
+        print("test_add_amount Start 2")
         amount=100
         
         print("test_add_amount 0")
