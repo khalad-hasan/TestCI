@@ -39,7 +39,7 @@ class FreeMemberShip:
                 }))
 
         fig.update_layout(paper_bgcolor = "lavender", font = {'color': "darkblue", 'family': "Arial"})
-        fig.show()
+        #fig.show()
         
         
 
