@@ -22,23 +22,27 @@ class TestFreeMembersip(unittest.TestCase):
         print("tearDownClass test_freemembership")
 
     def test_show_budget_chart(self):
+        print("test_show_budget_chart Start")
         budget=2000
         balance=200
         amount=100
-
+        print("test_show_budget_chart 1")
         free_mem=FreeMemberShip(budget)
         free_mem.set_balance(balance)
 
-        
+        print("test_show_budget_chart 2")
         self.assertEqual(free_mem.get_user_budget(),budget)
         self.assertEqual(free_mem.get_balance(),balance)   
 
+        print("test_show_budget_chart 3")
         free_mem=FreeMemberShip(1000)
         free_mem.set_balance(900)
 
+        print("test_show_budget_chart 4")
         self.assertEqual(free_mem.get_user_budget(),1000)
         self.assertEqual(free_mem.get_balance(),900)
         self.assertAlmostEqual(free_mem.get_balance(),900.0001,2) 
+        print("test_show_budget_chart End")
 
     def test_add_amount(self):
         budget=2000
