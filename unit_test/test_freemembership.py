@@ -12,7 +12,19 @@ class TestFreeMembersip(unittest.TestCase):
         print('setupClass TestFreeMembersip')
         
     def setUp(self) :
-        print('Setup TestFreeMembersip') 
+        print('Setup TestFreeMembersip')
+        print("test_add_amount Start")
+        budget=2000
+        print("test_add_amount Start 1")
+        balance=200
+        print("test_add_amount Start 2")
+        amount=100
+        
+        print("test_add_amount 0")
+        
+        free_mem=FreeMemberShip(budget)   
+        print("test_add_amount 0_1")
+        free_mem.add_amount(amount)        
     
 
     def tearDown(self):
@@ -47,18 +59,7 @@ class TestFreeMembersip(unittest.TestCase):
         print("test_show_budget_chart end")        
 
     def test_add_amount(self):
-        print("test_add_amount Start")
-        budget=2000
-        print("test_add_amount Start 1")
-        balance=200
-        print("test_add_amount Start 2")
-        amount=100
-        
-        print("test_add_amount 0")
-        
-        free_mem=FreeMemberShip(budget)   
-        print("test_add_amount 0_1")
-        free_mem.add_amount(amount)
+
         
         print("test_add_amount 1")
         self.assertEqual(free_mem.get_balance(),amount) 
