@@ -2,7 +2,7 @@ import unittest
 import pandas as pd
 import numpy as np
 from pandas.testing import assert_frame_equal
-from TestCI.budgetplanner.budget_subpackage.freemembership import FreeMemberShip
+from budgetplanner.budget_subpackage.freemembership import FreeMemberShip
 #from budgetplanner.budget_subpackage
 
 class TestFreeMembersip(unittest.TestCase):
