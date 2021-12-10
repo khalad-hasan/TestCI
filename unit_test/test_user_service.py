@@ -7,7 +7,6 @@ import budgetplanner.user_subpackage.service as service
 import budgetplanner.user_subpackage.bank_info as bank_info
 class test_user_service(unittest.TestCase):
     def setUp(self):
-        print("setUp test_user_service")
         self.service = service.Service()
         self.service2 = service.Service()
         self.service3 = service.Service()

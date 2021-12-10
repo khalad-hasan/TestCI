@@ -7,7 +7,6 @@ import budgetplanner.user_subpackage.service as service
 import budgetplanner.user_subpackage.bank_info as bank_info
 class test_user_personal_info(unittest.TestCase):
     def setUp(self):
-        print("setUp test_user_personal_info")
         self.personal_info = personal_info.personal_info(userid="001",age=17,email="w12@gmail.com",income=20)
         self.personal_info2 = personal_info.personal_info(userid="002",age=18,email="w12@gmail.com",income=20)
         self.personal_info3 = personal_info.personal_info(userid="003",age=19,email="w12@gmail.com",income=20)
