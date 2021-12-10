@@ -45,11 +45,14 @@ class TestFreeMembersip(unittest.TestCase):
         print("test_show_budget_chart End")
 
     def test_add_amount(self):
+        print("test_add_amount Start")
         budget=2000
         balance=200
         amount=100
         free_mem=FreeMemberShip(budget)        
         free_mem.add_amount(amount)
+        
+        print("test_add_amount 1")
         
         self.assertEqual(free_mem.get_balance(),amount) 
 
@@ -58,26 +61,33 @@ class TestFreeMembersip(unittest.TestCase):
 
         free_mem.add_amount(0)
         self.assertEqual(free_mem.get_balance(),2*amount)
+        
+        print("test_add_amount 2")
 
         free_mem.add_amount(20)
         self.assertEqual(free_mem.get_balance(),2*amount+20)
 
         free_mem.add_amount(40)
         self.assertAlmostEqual(free_mem.get_balance(),2*amount+60.0001,2)
+        print("test_add_amount End")
     
     def test_withdraw_amount(self):
-        
+        print("test_withdraw_amount Start")
         budget=2000
         balance=200
         amount=100
         free_mem=FreeMemberShip(budget)
         free_mem.set_balance(100)  
+        
+        print("test_withdraw_amount 1")
 
         self.assertEqual(free_mem.withdraw_amount(200),"Please enter lesser amount")
         free_mem.set_balance(1000)
         free_mem.withdraw_amount(250)
 
         self.assertEqual(free_mem.get_balance(),750)
+        
+        print("test_withdraw_amount 2")
 
         free_mem.set_balance(250)
         free_mem.withdraw_amount(250)
@@ -86,6 +96,7 @@ class TestFreeMembersip(unittest.TestCase):
         self.assertAlmostEqual(free_mem.get_balance(),0.001,2)
 
         self.assertEqual(free_mem.withdraw_amount(200),"Please enter lesser amount")
+        print("test_withdraw_amount END ")
 
 
         
